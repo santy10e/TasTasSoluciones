@@ -1,0 +1,1285 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width,initial-scale=1.0" />
+  <title>Tas Tas Soluciones — Sitios Web que Convierten</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,300;0,9..144,500;0,9..144,700;1,9..144,300;1,9..144,500&family=Epilogue:wght@300;400;500;600&display=swap"
+    rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            cream: '#F5F7FF',
+            forest: '#1E1B4B',
+            'forest-light': '#312E81',
+            terra: '#6366F1',
+            'terra-light': '#8B9CF7',
+            sand: '#E0E7FF',
+            sage: '#22D3EE',
+            mist: '#A5B4FC',
+            ink: '#312E81',
+            warm: '#1E1B4B',
+            foot: '#E0E7FF',
+          },
+
+          fontFamily: {
+            display: ['Inter', 'system-ui', 'sans-serif'],
+            body: ['Inter', 'system-ui', 'sans-serif'],
+          },
+
+          boxShadow: {
+            soft: '0 10px 30px rgba(0,0,0,0.25)',
+            glow: '0 0 40px rgba(99,102,241,0.35)',
+          },
+
+          borderRadius: {
+            '2xl': '1.25rem',
+            '3xl': '1.75rem',
+          }
+        }
+      }
+    }
+  </script>
+
+</head>
+
+<body class="mesh-bg">
+
+  <!-- Scroll progress -->
+  <div id="progress-bar"></div>
+
+  <!-- ═══════════════════════════════════
+    FLOATING CTA
+═══════════════════════════════════ -->
+  <div id="float-cta">
+    <a href="#contact"
+      class="btn-terra flex items-center gap-3 px-5 py-3 rounded-full font-body font-semibold text-sm shadow-xl">
+      <span>💬</span>
+      <span>Cotizar ahora</span>
+    </a>
+  </div>
+
+  <!-- ═══════════════════════════════════
+    HEADER / NAV
+═══════════════════════════════════ -->
+  <header id="header"
+    class="sticky top-0 z-40 bg-cream/80 backdrop-blur-md border-b border-sand transition-shadow duration-300">
+    <div class="max-w-7xl mx-auto px-5 py-1 flex items-center justify-between">
+      <!-- Logo 
+      <div class="font-display font-bold text-forest text-xl tracking-tight leading-none">
+        Tas Tas<br /><span class="text-terra font-light italic text-base" style="padding: 0px;">Soluciones Web
+          Digitales</span>
+      </div>
+      -->
+      <img src="./logo_horizontal_png.png" alt="Tas Tas Soluciones Web Digitales" class="h-16 w-auto object-contain" />
+      <!-- Desktop nav -->
+      <nav class="hidden md:flex items-center gap-8">
+        <a href="#pricing" class="font-body text-sm text-warm hover:text-forest transition-colors">Planes</a>
+        <a href="#process" class="font-body text-sm text-warm hover:text-forest transition-colors">Proceso</a>
+        <a href="#faq" class="font-body text-sm text-warm hover:text-forest transition-colors">FAQ</a>
+      </nav>
+
+      <div class="flex items-center gap-4">
+        <a href="#contact"
+          class="btn-primary hidden md:inline-flex items-center gap-2 px-5 py-2.5 rounded-full font-body font-semibold text-sm">
+          Empezar proyecto <span class="text-terra-light">→</span>
+        </a>
+        <!-- Hamburger -->
+        <button class="ham md:hidden flex flex-col gap-1.5 p-1" id="ham" aria-label="Menu">
+          <span></span><span></span><span></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Mobile menu -->
+    <div id="mobile-menu" class="md:hidden border-t border-sand">
+      <div class="px-6 py-4 flex flex-col gap-4">
+        <a href="#services" class="font-body text-sm text-warm py-2 border-b border-sand">Servicios</a>
+        <a href="#pricing" class="font-body text-sm text-warm py-2 border-b border-sand">Planes</a>
+        <a href="#process" class="font-body text-sm text-warm py-2 border-b border-sand">Proceso</a>
+        <a href="#faq" class="font-body text-sm text-warm py-2 border-b border-sand">FAQ</a>
+        <a href="#contact"
+          class="btn-primary text-center px-5 py-3 rounded-full font-body font-semibold text-sm mt-2">Empezar proyecto
+          →</a>
+      </div>
+    </div>
+  </header>
+
+
+  <!-- ═══════════════════════════════════
+    HERO --- PRINCIPAL (Poner Img)
+═══════════════════════════════════ -->
+  <section class="relative min-h-[92vh] flex flex-col justify-center overflow-hidden px-6 grain" id="hero"
+    style="background-image: url('./Logo_perfil_fb_Ultimate.png'); background-size: cover; background-position: center; background-repeat: no-repeat;">
+
+    <!-- Overlay -->
+    <div class="absolute inset-0 z-0" style="background: rgb(224, 231, 255, 0.85); backdrop-filter: blur(10px);"></div>
+
+    <!-- Blobs -->
+    <div class="blob absolute top-10 right-10 w-80 h-80 md:w-[500px] md:h-[500px]"
+      style="background:rgba(28,58,46,.07);animation-delay:0s;"></div>
+
+
+    <div class="blob absolute bottom-20 left-0 w-60 h-60 md:w-96 md:h-96"
+      style="background:rgba(200,92,45,.06);animation-delay:3s;"></div>
+
+    <div class="max-w-7xl mx-auto w-full relative z-10">
+      <div class="grid lg:grid-cols-2 gap-12 lg:gap-20 items-center">
+
+        <!-- Left -->
+        <div>
+          <div class="pill mb-8 animate-[fadeDown_.6s_ease_both]">
+            <span class="w-1.5 h-1.5 rounded-full bg-terra animate-pulse"></span>
+            Soluciones Web para Crecer tu Negocio
+          </div>
+
+          <h1 class="font-display font-medium leading-[.95] tracking-tight mb-6"
+            style="font-size:clamp(3rem,7vw,6rem);animation:fadeUp .8s .1s ease both;opacity:0;">
+            Tu web,<br />
+            <em class="text-terra not-italic">profesional</em><br />
+            y a tu medida.
+          </h1>
+
+          <p class="font-body text-warm text-lg leading-relaxed max-w-md mb-10"
+            style="animation:fadeUp .8s .25s ease both;opacity:0;">
+            Diseñamos y desarrollamos sitios web que generan confianza, atraen clientes y hacen crecer tu negocio. Desde
+            $90 USD.
+          </p>
+
+          <div class="flex flex-wrap gap-4 mb-14" style="animation:fadeUp .8s .4s ease both;opacity:0;">
+            <a href="#pricing"
+              class="btn-primary px-7 py-3.5 rounded-full font-body font-semibold text-sm flex items-center gap-2">
+              Ver planes y precios <span>↓</span>
+            </a>
+            <a href="#process" class="btn-secondary px-7 py-3.5 rounded-full font-body font-semibold text-sm">
+              Cómo funciona
+            </a>
+          </div>
+
+          <!-- Stats row -->
+          <div class="flex gap-8 pt-8 border-t border-sand" style="animation:fadeUp .8s .55s ease both;opacity:0;">
+            <div>
+              <div class="font-display text-4xl font-medium text-forest">
+                <span class="num-count" data-target="20">0</span>+
+              </div>
+              <div class="font-body text-xs text-warm mt-1 uppercase tracking-wider">Proyectos</div>
+            </div>
+            <div>
+              <div class="font-display text-4xl font-medium text-forest">
+                <span class="num-count" data-target="98">0</span>%
+              </div>
+              <div class="font-body text-xs text-warm mt-1 uppercase tracking-wider">Satisfacción</div>
+            </div>
+            <div>
+              <div class="font-display text-4xl font-medium text-forest">
+                <span class="num-count" data-target="3">0</span> días
+              </div>
+              <div class="font-body text-xs text-warm mt-1 uppercase tracking-wider">Entrega min.</div>
+            </div>
+          </div>
+        </div>
+
+
+
+        <!-- Right: Visual card stack -->
+        <div class="relative hidden lg:flex items-center justify-center h-[520px]">
+
+          <!-- Main card -->
+          <div class="absolute inset-8 bg-forest rounded-3xl p-8 flex flex-col justify-between shadow-2xl"
+            style="animation:floatCard 6s ease-in-out infinite;">
+            <div class="flex justify-between items-start">
+              <div class="font-display text-cream text-2xl font-medium italic">Starter</div>
+              <div class="bg-terra text-cream text-xs font-body font-semibold px-3 py-1 rounded-full">Popular</div>
+            </div>
+            <div>
+              <div class="font-display text-cream font-medium mb-1" style="font-size:4rem;line-height:1;">$90</div>
+              <div class="font-body text-mist text-sm mb-6">pago único · entrega 3-5 días</div>
+              <div class="space-y-3">
+                <div class="flex items-center gap-3">
+                  <div class="w-5 h-5 rounded-full bg-sage/30 flex items-center justify-center text-sage text-xs">✓
+                  </div>
+                  <span class="font-body text-cream/80 text-sm">1 páginas personalizadas</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-5 h-5 rounded-full bg-sage/30 flex items-center justify-center text-sage text-xs">✓
+                  </div>
+                  <span class="font-body text-cream/80 text-sm">sitio web informativo</span>
+                </div>
+                <div class="flex items-center gap-3">
+                  <div class="w-5 h-5 rounded-full bg-sage/30 flex items-center justify-center text-sage text-xs">✓
+                  </div>
+                  <span class="font-body text-cream/80 text-sm">7 días de soporte</span>
+                </div>
+              </div>
+            </div>
+            <div class="w-full py-3 rounded-2xl text-center font-body font-semibold text-sm"
+              style="background:#C85C2D;color:#FAF7F2;">
+              Elegir Starter →
+            </div>
+          </div>
+
+          <!-- Behind card -->
+          <div class="absolute inset-8 bg-sand rounded-3xl -rotate-3 -z-10"></div>
+          <div class="absolute inset-8 bg-terra/20 rounded-3xl rotate-3 -z-10"></div>
+
+          <!-- Floating badge -->
+          <div class="absolute -top-4 -right-4 bg-cream border border-sand rounded-2xl px-4 py-3 shadow-lg"
+            style="animation:floatBadge 4s ease-in-out infinite;">
+            <div class="font-body text-xs text-warm">⚡ Entrega garantizada</div>
+            <div class="font-display text-forest font-medium text-sm">en 3–5 días</div>
+          </div>
+
+          <!-- Trust badge -->
+          <div class="absolute -bottom-4 -left-4 bg-forest rounded-2xl px-4 py-3 shadow-lg"
+            style="animation:floatBadge 5s 1s ease-in-out infinite;">
+            <div class="font-body text-mist text-xs">100% Responsivo</div>
+            <div class="flex gap-1 mt-1">
+              <span class="material-icons text-terra">smartphone</span>
+              <span class="material-icons text-terra">tablet</span>
+              <span class="material-icons text-terra">desktop_windows</span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+
+    <!-- Wave bottom -->
+    <div class="absolute bottom-0 left-0 right-0">
+      <svg viewBox="0 0 1440 60" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <path
+          d="M0 60L60 48C120 36 240 12 360 6C480 0 600 12 720 24C840 36 960 48 1080 48C1200 48 1320 36 1380 30L1440 24V60H0Z"
+          fill="#E8DDD0" fill-opacity="0.5" />
+      </svg>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+    TRUST BAND
+═══════════════════════════════════ -->
+  <div class="bg-sand/50 border-y border-sand py-5 px-6">
+    <div class="max-w-7xl mx-auto flex flex-wrap justify-center gap-6 md:gap-12">
+      <div class="flex items-center gap-2 font-body text-sm text-warm">
+        <span class="text-forest text-lg">✦</span> Sin costos ocultos
+      </div>
+      <div class="flex items-center gap-2 font-body text-sm text-warm">
+        <span class="text-forest text-lg">✦</span> Entrega garantizada
+      </div>
+      <div class="flex items-center gap-2 font-body text-sm text-warm">
+        <span class="text-forest text-lg">✦</span> Revisiones incluidas
+      </div>
+      <div class="flex items-center gap-2 font-body text-sm text-warm">
+        <span class="text-forest text-lg">✦</span> Soporte post-lanzamiento
+      </div>
+      <div class="flex items-center gap-2 font-body text-sm text-warm">
+        <span class="text-forest text-lg">✦</span> 100% Responsivo
+      </div>
+    </div>
+  </div>
+
+
+  <!-- ═══════════════════════════════════
+    SERVICES (PAUSADO)
+═══════════════════════════════════ 
+  <section class="py-24 px-6" id="services">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="flex flex-col md:flex-row md:items-end justify-between mb-16 gap-6">
+        <div class="reveal">
+          <div class="pill mb-4">Servicios</div>
+          <h2 class="font-display font-medium leading-tight" style="font-size:clamp(2.2rem,4vw,3.8rem);">
+            Todo lo que<br />necesita tu web.
+          </h2>
+        </div>
+        <p class="font-body text-warm text-base max-w-xs leading-relaxed reveal-r">
+          Cada servicio está diseñado para trabajar junto. No vendemos piezas sueltas — construimos ecosistemas
+          digitales.
+        </p>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-4">
+
+        <div
+          class="svc-card reveal bg-cream border border-sand rounded-2xl p-7 relative overflow-hidden group cursor-default">
+          <div
+            class="svc-num font-display text-8xl font-medium text-sand absolute -right-3 -top-4 select-none transition-colors duration-300">
+            01</div>
+          <div class="relative z-10">
+            <div class="w-11 h-11 rounded-xl bg-forest/10 flex items-center justify-center text-xl mb-5">🎨</div>
+            <h3 class="svc-title font-display text-xl font-medium mb-3 text-forest transition-colors duration-300">
+              Diseño UI/UX</h3>
+            <p class="svc-desc font-body text-warm text-sm leading-relaxed transition-colors duration-300">Interfaces
+              que guían al usuario hasta la acción. Elegante, funcional, sin fricciones.</p>
+            <div class="svc-dot w-2 h-2 rounded-full bg-sand mt-6 transition-colors duration-300"></div>
+          </div>
+        </div>
+
+        <div
+          class="svc-card reveal bg-cream border border-sand rounded-2xl p-7 relative overflow-hidden group cursor-default"
+          style="transition-delay:.07s">
+          <div
+            class="svc-num font-display text-8xl font-medium text-sand absolute -right-3 -top-4 select-none transition-colors duration-300">
+            02</div>
+          <div class="relative z-10">
+            <div class="w-11 h-11 rounded-xl bg-forest/10 flex items-center justify-center text-xl mb-5">⚡</div>
+            <h3 class="svc-title font-display text-xl font-medium mb-3 text-forest transition-colors duration-300">
+              Desarrollo Web</h3>
+            <p class="svc-desc font-body text-warm text-sm leading-relaxed transition-colors duration-300">Código
+              limpio, veloz y escalable. Construido con las mejores tecnologías para durar.</p>
+            <div class="svc-dot w-2 h-2 rounded-full bg-sand mt-6 transition-colors duration-300"></div>
+          </div>
+        </div>
+
+        <div
+          class="svc-card reveal bg-cream border border-sand rounded-2xl p-7 relative overflow-hidden group cursor-default"
+          style="transition-delay:.14s">
+          <div
+            class="svc-num font-display text-8xl font-medium text-sand absolute -right-3 -top-4 select-none transition-colors duration-300">
+            03</div>
+          <div class="relative z-10">
+            <div class="w-11 h-11 rounded-xl bg-forest/10 flex items-center justify-center text-xl mb-5">🔍</div>
+            <h3 class="svc-title font-display text-xl font-medium mb-3 text-forest transition-colors duration-300">SEO
+              Técnico</h3>
+            <p class="svc-desc font-body text-warm text-sm leading-relaxed transition-colors duration-300">Optimización
+              desde los cimientos. Aparece en Google cuando te buscan tus clientes.</p>
+            <div class="svc-dot w-2 h-2 rounded-full bg-sand mt-6 transition-colors duration-300"></div>
+          </div>
+        </div>
+
+        <div
+          class="svc-card reveal bg-cream border border-sand rounded-2xl p-7 relative overflow-hidden group cursor-default"
+          style="transition-delay:.21s">
+          <div
+            class="svc-num font-display text-8xl font-medium text-sand absolute -right-3 -top-4 select-none transition-colors duration-300">
+            04</div>
+          <div class="relative z-10">
+            <div class="w-11 h-11 rounded-xl bg-forest/10 flex items-center justify-center text-xl mb-5">🛒</div>
+            <h3 class="svc-title font-display text-xl font-medium mb-3 text-forest transition-colors duration-300">
+              E-Commerce</h3>
+            <p class="svc-desc font-body text-warm text-sm leading-relaxed transition-colors duration-300">Tiendas
+              online que venden. Experiencias de compra fluidas con pagos integrados.</p>
+            <div class="svc-dot w-2 h-2 rounded-full bg-sand mt-6 transition-colors duration-300"></div>
+          </div>
+        </div>
+
+        <div
+          class="svc-card reveal bg-cream border border-sand rounded-2xl p-7 relative overflow-hidden group cursor-default"
+          style="transition-delay:.28s">
+          <div
+            class="svc-num font-display text-8xl font-medium text-sand absolute -right-3 -top-4 select-none transition-colors duration-300">
+            05</div>
+          <div class="relative z-10">
+            <div class="w-11 h-11 rounded-xl bg-forest/10 flex items-center justify-center text-xl mb-5">📱</div>
+            <h3 class="svc-title font-display text-xl font-medium mb-3 text-forest transition-colors duration-300">
+              Responsivo</h3>
+            <p class="svc-desc font-body text-warm text-sm leading-relaxed transition-colors duration-300">Perfecto en
+              móvil, tablet y escritorio. Mobile-first, siempre impecable en todo dispositivo.</p>
+            <div class="svc-dot w-2 h-2 rounded-full bg-sand mt-6 transition-colors duration-300"></div>
+          </div>
+        </div>
+
+        <div
+          class="svc-card reveal bg-forest border border-forest rounded-2xl p-7 relative overflow-hidden group cursor-default"
+          style="transition-delay:.35s">
+          <div class="font-display text-8xl font-medium absolute -right-3 -top-4 select-none"
+            style="color:rgba(250,247,242,.06)">06</div>
+          <div class="relative z-10">
+            <div class="w-11 h-11 rounded-xl bg-cream/10 flex items-center justify-center text-xl mb-5">🛡️</div>
+            <h3 class="font-display text-xl font-medium mb-3 text-cream">Soporte Continuo</h3>
+            <p class="font-body text-mist text-sm leading-relaxed">Mantenimiento, actualizaciones y soporte
+              post-lanzamiento. No te dejamos solo.</p>
+            <div class="w-2 h-2 rounded-full bg-terra mt-6"></div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+-->
+
+  <!-- ═══════════════════════════════════
+    PRICING
+═══════════════════════════════════ -->
+  <section class="py-24 px-6 bg-forest" id="pricing">
+    <div class="max-w-7xl mx-auto">
+
+      <!-- Header -->
+      <div class="text-center mb-6 reveal">
+        <div class="pill mb-5"
+          style="background:rgba(250,247,242,.1);color:#B5C9BF;border-color:rgba(250,247,242,.15);">Inversión</div>
+        <h2 class="font-display font-medium text-cream leading-tight" style="font-size:clamp(2.2rem,4.5vw,4rem);">
+          Elige el plan<br /><em class="text-terra-light">perfecto</em> para ti.
+        </h2>
+        <p class="font-body text-mist mt-4 max-w-md mx-auto text-base leading-relaxed">
+          Desde tu primera presencia digital hasta plataformas complejas. Sin sorpresas, sin letra chica.
+        </p>
+      </div>
+
+      <!-- Toggle -->
+      <div class="flex items-center justify-center gap-4 mb-12 reveal">
+        <span class="font-body text-sm text-mist" id="lbl-once">Pago único</span>
+        <div class="toggle-pill" id="price-toggle">
+          <div class="toggle-knob"></div>
+        </div>
+        <span class="font-body text-sm text-sage" id="lbl-maint">+ Mantenimiento mensual</span>
+      </div>
+
+      <!-- Plans -->
+      <div class="grid grid-cols-1 md:grid-cols-2 xl:grid-cols-4 gap-5">
+
+
+        <!-- BASSIC — FEATURED -->
+        <div class="plan-wrap reveal" style="transition-delay:.05s">
+          <div class="plan-inner bg-terra rounded-3xl p-7 flex flex-col h-full">
+            <!-- Glow -->
+            <div
+              class="absolute -top-12 -right-12 w-40 h-40 rounded-full bg-terra-light/40 blur-2xl pointer-events-none">
+            </div>
+
+            <div class="flex justify-between items-start mb-6">
+              <div>
+                <div class="font-body text-xs font-semibold uppercase tracking-widest text-cream/70 mb-4">Básico
+                </div>
+                <div class="flex items-end gap-1 mb-1">
+                  <span class="font-display text-5xl font-medium text-cream" id="price-s">$90</span>
+                  <span class="font-body text-cream/70 text-sm mb-2" id="cycle-s">USD</span>
+                </div>
+                <div class="font-body text-xs text-cream/70">Entrega en 5 días hábiles</div>
+              </div>
+              <div
+                class="bg-cream/20 backdrop-blur-sm text-cream font-body text-xs font-semibold px-3 py-1.5 rounded-full shrink-0">
+                ⭐ Popular
+              </div>
+            </div>
+
+            <p class="font-body text-sm text-cream/80 leading-relaxed mb-6 pb-6 border-b border-cream/20">
+              Tu punto de entrada digital. Ideal para freelancers y emprendedores que arrancan
+            </p>
+
+            <div class="space-y-3 mb-8 flex-1">
+              <div>
+                <div class="flex justify-between mb-1"><span class="font-body text-xs text-cream/70">Páginas</span><span
+                    class="font-body text-xs font-semibold text-cream">1</span></div>
+                <div class="feat-bar-track" style="background:rgba(250,247,242,.2)">
+                  <div class="feat-bar-fill" data-width="12%"
+                    style="background:linear-gradient(90deg,#FAF7F2,rgba(250,247,242,.7))"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1"><span class="font-body text-xs text-cream/70">Diseño</span><span
+                    class="font-body text-xs font-semibold text-cream">Básico</span></div>
+                <div class="feat-bar-track" style="background:rgba(250,247,242,.2)">
+                  <div class="feat-bar-fill" data-width="25%"
+                    style="background:linear-gradient(90deg,#FAF7F2,rgba(250,247,242,.7))"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1"><span class="font-body text-xs text-cream/70">SEO</span><span
+                    class="font-body text-xs font-semibold text-cream">On-page</span></div>
+                <div class="feat-bar-track" style="background:rgba(250,247,242,.2)">
+                  <div class="feat-bar-fill" data-width="20%"
+                    style="background:linear-gradient(90deg,#FAF7F2,rgba(250,247,242,.7))"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1"><span class="font-body text-xs text-cream/70">Soporte</span><span
+                    class="font-body text-xs font-semibold text-cream">7 días</span></div>
+                <div class="feat-bar-track" style="background:rgba(250,247,242,.2)">
+                  <div class="feat-bar-fill" data-width="8%"
+                    style="background:linear-gradient(90deg,#FAF7F2,rgba(250,247,242,.7))"></div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="space-y-2 mb-8">
+              <li class="flex gap-2 font-body text-xs text-cream/80"><span class="text-cream font-bold">✓</span> Landing
+                page completa</li>
+              <li class="flex gap-2 font-body text-xs text-cream/80"><span class="text-cream font-bold">✓</span>
+                Diseño responsivo</li>
+              <li class="flex gap-2 font-body text-xs text-cream/80"><span class="text-cream font-bold">✓</span>
+                Formulario de contacto</li>
+              <li class="flex gap-2 font-body text-xs text-cream/80"><span class="text-cream font-bold">✓</span>
+                Referencia Google Maps</li>
+              <li class="flex gap-2 font-body text-xs text-cream/80"><span class="text-cream font-bold">✓</span> SEO
+                básico</li>
+            </ul>
+
+            <a href="#contact"
+              class="w-full text-center py-3 rounded-xl font-body font-semibold text-sm bg-cream text-terra hover:bg-cream/90 transition-colors">
+              Elegir Básico →
+            </a>
+          </div>
+        </div>
+
+        <!-- Negocios -->
+        <div class="plan-wrap reveal" style="transition-delay:.1s">
+          <div class="plan-inner bg-cream rounded-3xl p-7 flex flex-col h-full">
+            <div class="mb-6">
+              <div class="font-body text-xs font-semibold uppercase tracking-widest text-warm mb-4">Negocios</div>
+              <div class="flex items-end gap-1 mb-1">
+                <span class="font-display text-5xl font-medium text-forest" id="price-b">$590</span>
+                <span class="font-body text-warm text-sm mb-2" id="cycle-b">USD</span>
+              </div>
+              <div class="font-body text-xs text-warm">Entrega en 10 días hábiles</div>
+            </div>
+
+            <p class="font-body text-sm text-warm leading-relaxed mb-6 pb-6 border-b border-sand">
+              Para empresas que quieren una presencia seria con múltiples secciones y blog.
+            </p>
+
+            <div class="space-y-3 mb-8 flex-1">
+              <div>
+                <div class="flex justify-between mb-1"><span class="font-body text-xs text-warm">Páginas</span><span
+                    class="font-body text-xs font-semibold text-forest">5</span></div>
+                <div class="feat-bar-track">
+                  <div class="feat-bar-fill" data-width="38%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1"><span class="font-body text-xs text-warm">Diseño</span><span
+                    class="font-body text-xs font-semibold text-forest">Avanzado</span></div>
+                <div class="feat-bar-track">
+                  <div class="feat-bar-fill" data-width="50%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1"><span class="font-body text-xs text-warm">SEO</span><span
+                    class="font-body text-xs font-semibold text-forest">Avanzado</span></div>
+                <div class="feat-bar-track">
+                  <div class="feat-bar-fill" data-width="52%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1"><span class="font-body text-xs text-warm">Soporte</span><span
+                    class="font-body text-xs font-semibold text-forest">30 días</span></div>
+                <div class="feat-bar-track">
+                  <div class="feat-bar-fill" data-width="30%"></div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="space-y-2 mb-8">
+              <li class="flex gap-2 font-body text-xs text-warm"><span class="text-forest font-bold">✓</span> Hasta 5
+                páginas</li>
+              <li class="flex gap-2 font-body text-xs text-warm"><span class="text-forest font-bold">✓</span> Blog
+                integrado</li>
+              <li class="flex gap-2 font-body text-xs text-warm"><span class="text-forest font-bold">✓</span> Google
+                Analytics</li>
+              <li class="flex gap-2 font-body text-xs text-warm"><span class="text-forest font-bold">✓</span>
+                Animaciones</li>
+              <li class="flex gap-2 font-body text-xs text-warm"><span class="text-forest font-bold">✓</span> 30 días
+                soporte</li>
+            </ul>
+
+            <a href="#contact" class="btn-secondary w-full text-center py-3 rounded-xl font-body font-semibold text-sm">
+              Comenzar →
+            </a>
+          </div>
+        </div>
+
+
+        <!-- Profesional — FEATURED -->
+        <div class="plan-wrap reveal" style="transition-delay:.15s">
+          <div class="plan-inner bg-cream rounded-3xl p-7 flex flex-col h-full">
+            <div class="mb-6">
+              <div class="font-body text-xs font-semibold uppercase tracking-widest text-warm mb-4">Profesional</div>
+              <div class="flex items-end gap-1 mb-1">
+                <span class="font-display text-5xl font-medium text-forest" id="price-p">$1,200</span>
+                <span class="font-body text-warm text-sm mb-2" id="cycle-p">USD</span>
+              </div>
+              <div class="font-body text-xs text-warm">Entrega en 45 días hábiles</div>
+            </div>
+
+            <p class="font-body text-sm text-warm leading-relaxed mb-6 pb-6 border-b border-sand">
+              La opción integral para empresas en crecimiento. WordPress + WooCommerce + CMS incluidos.
+            </p>
+
+            <!-- Feature bars -->
+            <div class="space-y-3 mb-8 flex-1">
+              <div>
+                <div class="flex justify-between mb-1"><span class="font-body text-xs text-warm">Páginas</span><span
+                    class="font-body text-xs font-semibold text-forest">12</span></div>
+                <div class="feat-bar-track">
+                  <div class="feat-bar-fill" data-width="75%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1"><span class="font-body text-xs text-warm">Diseño</span><span
+                    class="font-body text-xs font-semibold text-forest">Premium</span></div>
+                <div class="feat-bar-track">
+                  <div class="feat-bar-fill" data-width="80%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1"><span class="font-body text-xs text-warm">SEO</span><span
+                    class="font-body text-xs font-semibold text-forest">Técnico</span></div>
+                <div class="feat-bar-track">
+                  <div class="feat-bar-fill" data-width="78%"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1"><span class="font-body text-xs text-warm">Soporte</span><span
+                    class="font-body text-xs font-semibold text-forest">60 días</span></div>
+
+                <div class="feat-bar-track">
+                  <div class="feat-bar-fill" data-width="60%"></div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="space-y-2 mb-8">
+              <li class="flex gap-2 font-body text-xs text-warm"><span class="text-forest font-bold">✓</span> Hasta 12
+                páginas</li>
+              <li class="flex gap-2 font-body text-xs text-warm"><span class="text-forest font-bold">✓</span> Tienda con
+                hasta 12 productos</li>
+              <li class="flex gap-2 font-body text-xs text-warm"><span class="text-forest font-bold">✓</span> Pagos en
+                línea (tarjeta + PayPal)</li>
+              <li class="flex gap-2 font-body text-xs text-warm"><span class="text-forest font-bold">✓</span> Panel
+                autoadministrable (WordPress)</li>
+              <li class="flex gap-2 font-body text-xs text-warm"><span class="text-forest font-bold">✓</span>
+                Capacitación para gestión
+              </li>
+              <li class="flex gap-2 font-body text-xs text-warm"><span class="text-forest font-bold">✓</span> 60 días
+                soporte post-lanzamiento
+              </li>
+            </ul>
+
+            <a href="#contact" class="btn-secondary w-full text-center py-3 rounded-xl font-body font-semibold text-sm">
+              Comenzar →
+            </a>
+          </div>
+        </div>
+
+        <!-- Empresarial -->
+        <div class="plan-wrap reveal" style="transition-delay:.2s">
+          <div class="plan-inner bg-forest-light rounded-3xl p-7 flex flex-col h-full">
+            <div class="mb-6">
+              <div class="font-body text-xs font-semibold uppercase tracking-widest text-mist mb-4">Empresarial</div>
+              <div class="flex items-end gap-1 mb-1">
+                <span class="font-display text-5xl font-medium text-cream" id="price-e">$2,500</span>
+                <span class="font-body text-mist text-sm mb-2" id="cycle-e">USD</span>
+              </div>
+              <div class="font-body text-xs text-mist">Entrega en 95 días hábiles</div>
+            </div>
+
+            <p class="font-body text-sm text-mist leading-relaxed mb-6 pb-6 border-b border-cream/10">
+              Plataformas complejas, integraciones API y aplicaciones web a medida. Sin límites.
+            </p>
+
+            <div class="space-y-3 mb-8 flex-1">
+              <div>
+                <div class="flex justify-between mb-1"><span class="font-body text-xs text-mist">Páginas</span><span
+                    class="font-body text-xs font-semibold text-cream">15</span></div>
+                <div class="feat-bar-track" style="background:rgba(250,247,242,.1)">
+                  <div class="feat-bar-fill" data-width="100%"
+                    style="background:linear-gradient(90deg,#7A9E8E,#B5C9BF)"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1"><span class="font-body text-xs text-mist">Diseño</span><span
+                    class="font-body text-xs font-semibold text-cream">Custom</span></div>
+                <div class="feat-bar-track" style="background:rgba(250,247,242,.1)">
+                  <div class="feat-bar-fill" data-width="100%"
+                    style="background:linear-gradient(90deg,#7A9E8E,#B5C9BF)"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1"><span class="font-body text-xs text-mist">SEO</span><span
+                    class="font-body text-xs font-semibold text-cream">Estrategia</span></div>
+                <div class="feat-bar-track" style="background:rgba(250,247,242,.1)">
+                  <div class="feat-bar-fill" data-width="100%"
+                    style="background:linear-gradient(90deg,#7A9E8E,#B5C9BF)"></div>
+                </div>
+              </div>
+              <div>
+                <div class="flex justify-between mb-1"><span class="font-body text-xs text-mist">Soporte</span><span
+                    class="font-body text-xs font-semibold text-cream">90 días</span></div>
+                <div class="feat-bar-track" style="background:rgba(250,247,242,.1)">
+                  <div class="feat-bar-fill" data-width="90%" style="background:linear-gradient(90deg,#7A9E8E,#B5C9BF)">
+                  </div>
+                </div>
+              </div>
+            </div>
+
+            <ul class="space-y-2 mb-8">
+              <li class="flex gap-2 font-body text-xs text-mist"><span class="text-sage font-bold">✓</span> Hasta 15
+                páginas</li>
+              <li class="flex gap-2 font-body text-xs text-mist"><span class="text-sage font-bold">✓</span> App web con
+                dashboard</li>
+              <li class="flex gap-2 font-body text-xs text-mist"><span class="text-sage font-bold">✓</span>
+                Autenticación de usuarios</li>
+              <li class="flex gap-2 font-body text-xs text-mist"><span class="text-sage font-bold">✓</span>
+                Integraciones API</li>
+              <li class="flex gap-2 font-body text-xs text-mist"><span class="text-sage font-bold">✓</span>
+                Pagos con stripe</li>
+              <li class="flex gap-2 font-body text-xs text-mist"><span class="text-sage font-bold">✓</span> 90 días
+                soporte dedicado</li>
+              <li class="flex gap-2 font-body text-xs text-mist"><span class="text-sage font-bold">✓</span> Reuniones
+                mensuales</li>
+            </ul>
+
+            <a href="#contact"
+              class="w-full text-center py-3 rounded-xl font-body font-semibold text-sm border border-mist/30 text-cream hover:bg-cream/10 transition-colors">
+              Hablar con experto →
+            </a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+    PROCESS
+═══════════════════════════════════ -->
+  <section class="py-24 px-6" id="process">
+    <div class="max-w-7xl mx-auto">
+
+      <div class="text-center mb-16 reveal">
+        <div class="pill mb-4">Proceso</div>
+        <h2 class="font-display font-medium leading-tight" style="font-size:clamp(2.2rem,4vw,3.8rem);">
+          De cero a online<br />en <em class="text-terra italic">4 pasos.</em>
+        </h2>
+      </div>
+
+      <div class="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-6">
+
+        <div class="reveal" style="transition-delay:.05s">
+          <div class="bg-sand rounded-2xl p-7 h-full hover:shadow-lg transition-shadow duration-300">
+            <div
+              class="w-12 h-12 rounded-xl bg-forest flex items-center justify-center font-display text-cream text-xl font-medium mb-5">
+              1</div>
+            <h3 class="font-display text-xl font-medium text-forest mb-3">Descubrimiento</h3>
+            <p class="font-body text-sm text-warm leading-relaxed">Entendemos tu negocio, tu audiencia y tus metas. Una
+              llamada de 30 min que lo cambia todo.</p>
+          </div>
+        </div>
+
+        <div class="reveal" style="transition-delay:.1s">
+          <div class="bg-sand rounded-2xl p-7 h-full hover:shadow-lg transition-shadow duration-300">
+            <div
+              class="w-12 h-12 rounded-xl bg-forest flex items-center justify-center font-display text-cream text-xl font-medium mb-5">
+              2</div>
+            <h3 class="font-display text-xl font-medium text-forest mb-3">Diseño</h3>
+            <p class="font-body text-sm text-warm leading-relaxed">Wireframes, paleta de colores, tipografía. Cada
+              decisión visual tiene un propósito estratégico.</p>
+          </div>
+        </div>
+
+        <div class="reveal" style="transition-delay:.15s">
+          <div class="bg-sand rounded-2xl p-7 h-full hover:shadow-lg transition-shadow duration-300">
+            <div
+              class="w-12 h-12 rounded-xl bg-forest flex items-center justify-center font-display text-cream text-xl font-medium mb-5">
+              3</div>
+            <h3 class="font-display text-xl font-medium text-forest mb-3">Desarrollo</h3>
+            <p class="font-body text-sm text-warm leading-relaxed">Código limpio, optimizado y responsivo. Construimos
+              sobre tecnología probada y moderna.</p>
+          </div>
+        </div>
+
+        <div class="reveal" style="transition-delay:.2s">
+          <div class="bg-terra rounded-2xl p-7 h-full hover:shadow-xl transition-shadow duration-300">
+            <div
+              class="w-12 h-12 rounded-xl bg-cream flex items-center justify-center font-display text-terra text-xl font-medium mb-5">
+              4</div>
+            <h3 class="font-display text-xl font-medium text-cream mb-3">Lanzamiento</h3>
+            <p class="font-body text-sm text-cream/80 leading-relaxed">Deploy impecable, pruebas en todos los
+              dispositivos. Tu sitio vivo y listo para convertir.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+    TESTIMONIALS
+═══════════════════════════════════ -->
+  <section class="py-24 px-6 bg-sand/40">
+    <div class="max-w-7xl mx-auto">
+      <div class="text-center mb-12 reveal">
+        <div class="pill mb-4">Testimonios</div>
+        <h2 class="font-display font-medium" style="font-size:clamp(2rem,3.5vw,3rem);">Lo que dicen nuestros clientes.
+        </h2>
+      </div>
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+
+        <div class="testi-card reveal bg-cream rounded-2xl p-7 border border-sand">
+          <div class="flex gap-1 mb-4">
+            <span class="text-terra">★★★★★</span>
+          </div>
+          <p class="font-body text-warm text-sm leading-relaxed mb-6">
+            "Entregaron mi sitio en exactamente 5 días como prometieron. El diseño superó mis expectativas y mis
+            clientes me preguntan quién me lo hizo."
+          </p>
+          <div class="flex items-center gap-3">
+            <div
+              class="w-10 h-10 rounded-full bg-forest flex items-center justify-center text-cream font-display text-lg">
+              M</div>
+            <div>
+              <div class="font-body text-sm font-semibold text-forest">María F.</div>
+              <div class="font-body text-xs text-warm">Boutique de moda · Quito</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal bg-cream rounded-2xl p-7 border border-sand" style="transition-delay:.08s">
+          <div class="flex gap-1 mb-4">
+            <span class="text-terra">★★★★★</span>
+          </div>
+          <p class="font-body text-warm text-sm leading-relaxed mb-6">
+            "Empezamos con el plan Negocios y en 3 meses tuvimos que subir a Profesional porque nos llenamos de pedidos
+            online. Inversión que se paga sola."
+          </p>
+          <div class="flex items-center gap-3">
+            <div
+              class="w-10 h-10 rounded-full bg-terra flex items-center justify-center text-cream font-display text-lg">C
+            </div>
+            <div>
+              <div class="font-body text-sm font-semibold text-forest">Carlos M.</div>
+              <div class="font-body text-xs text-warm">Restaurante · Guayaquil</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="testi-card reveal bg-forest rounded-2xl p-7 border border-forest" style="transition-delay:.16s">
+          <div class="flex gap-1 mb-4">
+            <span style="color:#C85C2D">★★★★★</span>
+          </div>
+          <p class="font-body text-mist text-sm leading-relaxed mb-6">
+            "Profesionales, puntuales y con un ojo para el diseño increíble. Mi página quedó exactamente como la
+            imaginaba, incluso mejor."
+          </p>
+          <div class="flex items-center gap-3">
+            <div
+              class="w-10 h-10 rounded-full bg-sage flex items-center justify-center text-forest font-display text-lg">A
+            </div>
+            <div>
+              <div class="font-body text-sm font-semibold text-cream">Andrea L.</div>
+              <div class="font-body text-xs text-mist">Consultoría · Cuenca</div>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+    FAQ
+═══════════════════════════════════ -->
+  <section class="py-24 px-6" id="faq">
+    <div class="max-w-3xl mx-auto">
+      <div class="text-center mb-12 reveal">
+        <div class="pill mb-4">FAQ</div>
+        <h2 class="font-display font-medium" style="font-size:clamp(2rem,3.5vw,3.2rem);">Preguntas frecuentes.</h2>
+      </div>
+
+      <div class="space-y-3 reveal">
+
+        <div class="faq-item bg-cream border border-sand rounded-2xl overflow-hidden">
+          <button class="faq-trigger w-full flex items-center justify-between p-6 text-left">
+            <span class="font-body font-medium text-forest text-sm">¿Puedo cambiar de plan en el futuro?</span>
+            <span class="faq-icon text-terra text-xl font-light ml-4">+</span>
+          </button>
+          <div class="faq-answer opacity-0">
+            <p class="font-body text-warm text-sm leading-relaxed px-6 pb-6">Sí, puedes hacer upgrade a un plan superior
+              en cualquier momento. Solo se cobra la diferencia entre planes más el trabajo adicional. Nunca pierdes lo
+              que ya pagaste.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-cream border border-sand rounded-2xl overflow-hidden">
+          <button class="faq-trigger w-full flex items-center justify-between p-6 text-left">
+            <span class="font-body font-medium text-forest text-sm">¿Cuántas revisiones incluye cada plan?</span>
+            <span class="faq-icon text-terra text-xl font-light ml-4">+</span>
+          </button>
+          <div class="faq-answer opacity-0">
+            <p class="font-body text-warm text-sm leading-relaxed px-6 pb-6">Todos los planes incluyen revisiones
+              ilimitadas durante el proceso de diseño. No lanzamos hasta que estés 100% satisfecho con el resultado.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-cream border border-sand rounded-2xl overflow-hidden">
+          <button class="faq-trigger w-full flex items-center justify-between p-6 text-left">
+            <span class="font-body font-medium text-forest text-sm">¿Qué necesito para empezar?</span>
+            <span class="faq-icon text-terra text-xl font-light ml-4">+</span>
+          </button>
+          <div class="faq-answer opacity-0">
+            <p class="font-body text-warm text-sm leading-relaxed px-6 pb-6">Solo necesitas tu logo (o lo creamos),
+              fotos de tu negocio o producto, y textos básicos. Nosotros hacemos el resto. Si no tienes algo, también lo
+              podemos gestionar.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-cream border border-sand rounded-2xl overflow-hidden">
+          <button class="faq-trigger w-full flex items-center justify-between p-6 text-left">
+            <span class="font-body font-medium text-forest text-sm">¿El hosting está incluido?</span>
+            <span class="faq-icon text-terra text-xl font-light ml-4">+</span>
+          </button>
+          <div class="faq-answer opacity-0">
+            <p class="font-body text-warm text-sm leading-relaxed px-6 pb-6">Solo el plan Básico incluye hosting gratis
+              durante el primer año. En los demás planes, el hosting no está incluido. Te asesoramos y configuramos la
+              mejor opción según tu proyecto.</p>
+          </div>
+        </div>
+
+        <div class="faq-item bg-cream border border-sand rounded-2xl overflow-hidden">
+          <button class="faq-trigger w-full flex items-center justify-between p-6 text-left">
+            <span class="font-body font-medium text-forest text-sm">¿Cómo es el proceso de pago?</span>
+            <span class="faq-icon text-terra text-xl font-light ml-4">+</span>
+          </button>
+          <div class="faq-answer opacity-0">
+            <p class="font-body text-warm text-sm leading-relaxed px-6 pb-6">50% al inicio del proyecto y 50% al
+              entregarte el sitio terminado. Aceptamos transferencia, criptomonedas y PayPal. Sin pagos hasta que veas el
+              diseño aprobado.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- ═══════════════════════════════════
+    CTA FINAL
+═══════════════════════════════════ -->
+  <section class="py-24 px-6 bg-forest relative overflow-hidden grain" id="contact">
+
+    <!-- Blobs -->
+    <div class="blob absolute top-0 right-0 w-96 h-96" style="background:rgba(200,92,45,.12);"></div>
+    <div class="blob absolute bottom-0 left-0 w-80 h-80" style="background:rgba(122,158,142,.1);animation-delay:4s;">
+    </div>
+
+    <div class="max-w-4xl mx-auto text-center relative z-10">
+      <div class="reveal">
+        <div class="pill mb-6"
+          style="background:rgba(250,247,242,.1);color:#B5C9BF;border-color:rgba(250,247,242,.15);">Empecemos</div>
+        <h2 class="font-display font-medium text-cream leading-tight mb-6" style="font-size:clamp(2.5rem,5.5vw,5rem);">
+          Tu negocio merece<br />una web <em class="text-terra-light">extraordinaria.</em>
+        </h2>
+        <p class="font-body text-mist text-lg leading-relaxed max-w-lg mx-auto mb-12">
+          Primera consulta gratis. Sin compromiso. Cuéntanos tu proyecto y te respondemos en menos de 24 horas.
+        </p>
+
+        <div class="flex flex-col sm:flex-row gap-4 justify-center mb-12">
+
+          <!-- ✉ Email Button 
+          <a href="mailto:hola@tastastechnology.com"
+            class="btn-terra group px-6 py-4 rounded-2xl font-body font-semibold text-sm flex items-center justify-center gap-3 relative overflow-hidden"
+            style="box-shadow: 0 4px 24px rgba(200,92,45,0.25);">
+            <span
+              class="flex items-center justify-center w-8 h-8 rounded-lg bg-white/15 flex-shrink-0 transition-transform group-hover:scale-110">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="none">
+                <rect width="20" height="15" x="2" y="4.5" rx="2.5" fill="white" opacity="0.95" />
+                <path d="M2 7l9.293 6.293a1 1 0 001.414 0L22 7" stroke="rgba(200,92,45,1)" stroke-width="1.5"
+                  fill="none" />
+              </svg>
+            </span>
+            <span class="flex flex-col items-start leading-tight">
+              <span class="text-white/60 text-[10px] font-normal tracking-wider uppercase">Escríbenos</span>
+              <span class="text-white text-sm">hola@tastastechnology.com</span>
+            </span>
+          </a>
+          -->
+
+          <!-- 💬 WhatsApp Button — mensaje personalizado -->
+          <a href="https://wa.me/593963020270?text=¡Hola!%20Vi%20su%20página%20web%20y%20me%20interesa%20saber%20más%20sobre%20sus%20soluciones%20web.%20Me%20gustaría%20una%20consulta%20gratuita%20para%20mi%20negocio.%20%F0%9F%91%8B"
+            target="_blank"
+            class="group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl font-body font-semibold text-sm border border-cream/20 text-cream transition-all duration-300 relative overflow-hidden"
+            style="background: rgba(37,211,102,0.08);">
+            <span class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              style="background: rgba(37,211,102,0.10);"></span>
+            <span
+              class="flex items-center justify-center w-8 h-8 rounded-lg flex-shrink-0 transition-transform group-hover:scale-110 relative z-10"
+              style="background: #25D366;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 32 32" width="18" height="18" fill="white">
+                <path
+                  d="M16.002 3C9.374 3 4 8.373 4 15c0 2.385.68 4.61 1.86 6.498L4 29l7.695-1.825A12.94 12.94 0 0016.002 28C22.628 28 28 22.627 28 16S22.628 3 16.002 3zm0 23.6a10.9 10.9 0 01-5.57-1.527l-.4-.237-4.57 1.083 1.128-4.432-.262-.418A10.88 10.88 0 015.4 15C5.4 9.145 10.147 4.4 16.002 4.4 21.855 4.4 26.6 9.145 26.6 15c0 5.853-4.745 10.6-10.598 10.6zm5.81-7.936c-.318-.16-1.88-.929-2.172-1.035-.29-.106-.502-.16-.713.16-.21.318-.819 1.035-.003 1.247-.134.16-.267.185-.5.06-.234-.124-1.01-.374-1.924-1.192-.711-.635-1.19-1.418-1.33-1.657-.14-.24-.015-.369.105-.489.108-.107.24-.278.36-.417.12-.14.16-.24.24-.4.08-.16.04-.3-.02-.42-.06-.12-.713-1.72-.977-2.356-.257-.62-.517-.535-.712-.545l-.607-.01c-.21 0-.55.08-.839.398-.29.32-1.103 1.077-1.103 2.627 0 1.55 1.13 3.046 1.288 3.256.159.21 2.223 3.394 5.386 4.758.753.325 1.341.52 1.798.665.755.24 1.443.206 1.987.125.606-.09 1.88-.769 2.144-1.511.265-.743.265-1.38.185-1.511-.079-.133-.29-.213-.607-.372z" />
+              </svg>
+            </span>
+            <span class="flex flex-col items-start leading-tight relative z-10">
+              <span class="text-white/50 text-[10px] font-normal tracking-wider uppercase">Chat directo</span>
+              <span class="text-white text-sm">WhatsApp</span>
+            </span>
+            <span
+              class="absolute inset-0 rounded-2xl border border-transparent group-hover:border-[#25D366]/40 transition-all duration-300 pointer-events-none"></span>
+          </a>
+
+          <!-- 📘 Facebook Button -->
+          <a href="https://www.facebook.com/tastas.oficial/" target="_blank"
+            class="group flex items-center justify-center gap-3 px-6 py-4 rounded-2xl font-body font-semibold text-sm border border-cream/20 text-cream transition-all duration-300 relative overflow-hidden"
+            style="background: rgba(24,119,242,0.08);">
+            <span class="absolute inset-0 rounded-2xl opacity-0 group-hover:opacity-100 transition-opacity duration-300"
+              style="background: rgba(24,119,242,0.10);"></span>
+            <span
+              class="flex items-center justify-center w-8 h-8 rounded-lg flex-shrink-0 transition-transform group-hover:scale-110 relative z-10"
+              style="background: #1877F2;">
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" width="18" height="18" fill="white">
+                <path
+                  d="M24 12.073C24 5.405 18.627 0 12 0S0 5.405 0 12.073C0 18.1 4.388 23.094 10.125 24v-8.437H7.078v-3.49h3.047V9.41c0-3.025 1.791-4.697 4.533-4.697 1.313 0 2.686.236 2.686.236v2.97h-1.513c-1.491 0-1.956.93-1.956 1.883v2.27h3.328l-.532 3.49h-2.796V24C19.612 23.094 24 18.1 24 12.073z" />
+              </svg>
+            </span>
+            <span class="flex flex-col items-start leading-tight relative z-10">
+              <span class="text-white/50 text-[10px] font-normal tracking-wider uppercase">Síguenos</span>
+              <span class="text-white text-sm">Facebook</span>
+            </span>
+            <span
+              class="absolute inset-0 rounded-2xl border border-transparent group-hover:border-[#1877F2]/40 transition-all duration-300 pointer-events-none"></span>
+          </a>
+
+        </div>
+
+        <!-- Trust micro-copy -->
+        <div class="flex flex-wrap justify-center gap-6">
+          <div class="flex items-center gap-2 font-body text-xs text-mist">
+            <span class="text-sage">✓</span> Respuesta en &lt;24h
+          </div>
+          <div class="flex items-center gap-2 font-body text-xs text-mist">
+            <span class="text-sage">✓</span> Primera consulta gratis
+          </div>
+          <div class="flex items-center gap-2 font-body text-xs text-mist">
+            <span class="text-sage">✓</span> Sin compromiso
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+
+  <!-- FOOTER -->
+  <footer id="footer" class="bg-ink py-2 px-6">
+    <div class="max-w-7xl mx-auto px-5 py-1 flex items-center justify-between">
+      <!--
+      <div class="max-w-7xl mx-auto flex flex-col md:flex-row justify-between items-center gap-4">
+      <div class="font-display text-cream text-lg">
+        Tas Tas <span class="text-terra italic font-light">Technology</span>
+      </div>
+      -->
+      <div class="font-display text-cream text-lg flex items-center gap-2">
+        <img src="./logo_solo.png" alt="Tas Tas" class="h-16 w-auto">
+        <span class="text-terra italic font-light"></span>
+      </div>
+      <div class="flex gap-6">
+        <a href="#pricing" class="font-body text-xs text-foot hover:text-cream transition-colors">Planes</a>
+        <a href="#process" class="font-body text-xs text-foot hover:text-cream transition-colors">Proceso</a>
+        <a href="#faq" class="font-body text-xs text-foot hover:text-cream transition-colors">FAQ</a>
+      </div>
+      <div class="font-body text-xs text-foot">© 2026 Tas Tas Soluciones ·</div>
+    </div>
+  </footer>
+
+
+  <!-- ═══ KEYFRAMES & ANIMATIONS ═══ -->
+  <style>
+    @keyframes fadeUp {
+      from {
+        opacity: 0;
+        transform: translateY(30px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    @keyframes fadeDown {
+      from {
+        opacity: 0;
+        transform: translateY(-16px)
+      }
+
+      to {
+        opacity: 1;
+        transform: none
+      }
+    }
+
+    @keyframes floatCard {
+
+      0%,
+      100% {
+        transform: translateY(0) rotate(-1deg)
+      }
+
+      50% {
+        transform: translateY(-12px) rotate(.5deg)
+      }
+    }
+
+    @keyframes floatBadge {
+
+      0%,
+      100% {
+        transform: translateY(0)
+      }
+
+      50% {
+        transform: translateY(-8px)
+      }
+    }
+  </style>
+
+
+  <script>
+    /* ── Scroll progress ── */
+    const progressBar = document.getElementById('progress-bar');
+    const floatCta = document.getElementById('float-cta');
+    window.addEventListener('scroll', () => {
+      const s = document.documentElement.scrollTop;
+      const h = document.documentElement.scrollHeight - window.innerHeight;
+      progressBar.style.width = (s / h * 100) + '%';
+      floatCta.classList.toggle('show', s > window.innerHeight * 0.6);
+
+      // Header shadow
+      document.getElementById('header').style.boxShadow =
+        s > 20 ? '0 4px 20px rgba(28,58,46,.08)' : 'none';
+    });
+
+    /* ── Mobile menu ── */
+    document.getElementById('ham').addEventListener('click', function () {
+      this.classList.toggle('open');
+      document.getElementById('mobile-menu').classList.toggle('open');
+    });
+
+    /* ── Close menu on link click ── */
+    document.querySelectorAll('#mobile-menu a').forEach(a => {
+      a.addEventListener('click', () => {
+        document.getElementById('ham').classList.remove('open');
+        document.getElementById('mobile-menu').classList.remove('open');
+      });
+    });
+
+    /* ── Smooth scroll ── */
+    document.querySelectorAll('a[href^="#"]').forEach(a => {
+      a.addEventListener('click', e => {
+        const t = document.querySelector(a.getAttribute('href'));
+        if (t) { e.preventDefault(); t.scrollIntoView({ behavior: 'smooth', block: 'start' }); }
+      });
+    });
+
+    /* ── Scroll reveal ── */
+    const obs = new IntersectionObserver(entries => {
+      entries.forEach(e => { if (e.isIntersecting) e.target.classList.add('up'); });
+    }, { threshold: 0.08 });
+    document.querySelectorAll('.reveal, .reveal-r').forEach(el => obs.observe(el));
+
+    /* ── Counter animation ── */
+    function countUp(el, target, duration = 1600) {
+      const start = performance.now();
+      const update = now => {
+        const p = Math.min((now - start) / duration, 1);
+        const ease = 1 - Math.pow(1 - p, 3);
+        el.textContent = Math.floor(ease * target);
+        if (p < 1) requestAnimationFrame(update);
+        else el.textContent = target;
+      };
+      requestAnimationFrame(update);
+    }
+    const cntObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          document.querySelectorAll('.num-count').forEach(el => {
+            countUp(el, parseInt(el.dataset.target));
+          });
+          cntObs.disconnect();
+        }
+      });
+    }, { threshold: 0.5 });
+    const firstStat = document.querySelector('.num-count');
+    if (firstStat) cntObs.observe(firstStat);
+
+    /* ── Feature bars animation ── */
+    const barObs = new IntersectionObserver(entries => {
+      entries.forEach(e => {
+        if (e.isIntersecting) {
+          e.target.querySelectorAll('.feat-bar-fill').forEach((bar, i) => {
+            setTimeout(() => { bar.style.width = bar.dataset.width; }, i * 150);
+          });
+        }
+      });
+    }, { threshold: 0.3 });
+    document.querySelectorAll('.plan-wrap').forEach(el => barObs.observe(el));
+
+    /* ── FAQ accordion ── */
+    document.querySelectorAll('.faq-trigger').forEach(btn => {
+      btn.addEventListener('click', () => {
+        const item = btn.closest('.faq-item');
+        const ans = item.querySelector('.faq-answer');
+        const wasOpen = item.classList.contains('open');
+
+        // Close all
+        document.querySelectorAll('.faq-item').forEach(fi => {
+          fi.classList.remove('open');
+          fi.querySelector('.faq-answer').classList.remove('open');
+          fi.querySelector('.faq-answer').style.opacity = '0';
+        });
+
+        if (!wasOpen) {
+          item.classList.add('open');
+          ans.classList.add('open');
+          setTimeout(() => ans.style.opacity = '1', 50);
+        }
+      });
+    });
+
+    /* ── Price toggle (maintenance mode) ── */
+    const toggle = document.getElementById('price-toggle');
+    const prices = {
+      s: { once: '$90', maint: '$90 <span style="font-size:.5em;opacity:.7">+ $19/mes</span>' },
+      b: { once: '$590', maint: '$590 <span style="font-size:.5em;opacity:.7">+ $39/mes</span>' },
+      p: { once: '$1,200', maint: '$1,200 <span style="font-size:.5em;opacity:.7">+ $79/mes</span>' },
+      e: { once: '$2,500', maint: '$2,500 <span style="font-size:.5em;opacity:.7">+ $149/mes</span>' },
+    };
+    let maintOn = false;
+    toggle.addEventListener('click', () => {
+      maintOn = !maintOn;
+      toggle.classList.toggle('on', maintOn);
+      ['s', 'b', 'p', 'e'].forEach(k => {
+        document.getElementById('price-' + k).innerHTML = maintOn ? prices[k].maint : prices[k].once;
+      });
+      document.getElementById('lbl-once').style.opacity = maintOn ? '.5' : '1';
+      document.getElementById('lbl-maint').style.opacity = maintOn ? '1' : '.5';
+    });
+
+
+    const cta = document.getElementById('float-cta');
+    const footer = document.getElementById('footer');
+
+    const observer = new IntersectionObserver(
+      (entries) => {
+        entries.forEach(entry => {
+          if (entry.isIntersecting) {
+            cta.classList.remove('show'); // oculta
+          } else {
+            cta.classList.add('show'); // muestra
+          }
+        });
+      },
+      {
+        root: null,
+        threshold: 0.1 // cuando el 10% del footer es visible
+      }
+    );
+
+    observer.observe(footer);
+  </script>
+</body>
+
+</html>
